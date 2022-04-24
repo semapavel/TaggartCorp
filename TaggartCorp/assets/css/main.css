@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600;700&display=swap");
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 12pt;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tm20 {
+  margin-top: 20px;
+}
+
+.jcc {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.fdr {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+body {
+  background-color: #191A1B;
+}
+
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60pt;
+  line-height: 1;
+}
+
+.page-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.header__main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  max-width: 220px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__logo img {
+  max-width: 100%;
+  display: block;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__phone {
+  display: none;
+}
+
+.header__whatsapp {
+  display: none;
+}
+
+.header a.parent {
+  margin: 0px 20px 0 0;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__list > li {
+  position: relative;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.header__list > li:last-child {
+  margin-right: 0;
+}
+
+.header__list > li.active {
+  color: red;
+}
+
+.header__list > li.active:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: red;
+}
+
+.header__link {
+  position: relative;
+  color: #484848;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #ccc;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+#divider {
+  margin-top: 90px;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.section__title_mainscreen {
+  color: #fff;
+  text-align: right;
+}
+
+.page__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.page__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page__col.mainscreen__form {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 25px;
+}
+
+.page__col.per50 {
+  width: 50%;
+}
+
+.page__col.per50 img {
+  width: 100%;
+}
+
+.mainscreen__form {
+  color: #fff;
+}
+
+.mainscreen__form input {
+  border-radius: 25px;
+  height: 40px;
+  border: 1px solid #B2B2B2;
+  width: 200px;
+  padding: 0 20px;
+  border: 2px solid #191A1B;
+}
+
+.mainscreen__form input:focus {
+  border: 2px solid #FD642F;
+}
+
+.mainscreen__form label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10pt;
+  color: #7A7A7A;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.mainscreen__form h2 {
+  margin: 25px 0;
+  text-align: right;
+}
+
+.form-calc-request h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #FD642F;
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 25px;
+  text-align: center;
+  color: #363B40;
+}
+/*# sourceMappingURL=main.css.map */
